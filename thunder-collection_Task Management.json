@@ -1,0 +1,233 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Task Management",
+    "collectionId": "75983173-7ee9-48a4-b550-4204c5d4bad6",
+    "dateExported": "2024-07-25T20:29:41.687Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e37e2e0f-881a-46c6-81c2-dd11a97f3e89",
+            "colId": "75983173-7ee9-48a4-b550-4204c5d4bad6",
+            "containerId": "",
+            "name": "register-api",
+            "url": "http://127.0.0.1:8000/api/register/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-07-25T20:27:42.245Z",
+            "modified": "2024-07-25T20:27:42.245Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"Prahalad\",\n  \"password\":\"Prahalad123\",\n  \"email\":\"Prahalad@gmail.com\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "20c82505-7796-4bbe-b20c-6bf9b623a09f",
+            "colId": "75983173-7ee9-48a4-b550-4204c5d4bad6",
+            "containerId": "",
+            "name": "login",
+            "url": "http://127.0.0.1:8000/api/login/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-07-25T20:27:50.045Z",
+            "modified": "2024-07-25T20:27:50.045Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"Prahalad\",\n  \"password\":\"Prahalad123\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a4b15fd3-8072-45fb-a391-a072216ce996",
+            "colId": "75983173-7ee9-48a4-b550-4204c5d4bad6",
+            "containerId": "",
+            "name": "get-task",
+            "url": "http://127.0.0.1:8000/api/tasks/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-07-25T20:28:01.251Z",
+            "modified": "2024-07-25T20:28:01.251Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token e21d12ea78557984931bf6b5921764f1589f96e8"
+                }
+            ]
+        },
+        {
+            "_id": "c04f85b9-894c-4040-81a2-0a39eace0ea1",
+            "colId": "75983173-7ee9-48a4-b550-4204c5d4bad6",
+            "containerId": "",
+            "name": "create-task",
+            "url": "http://127.0.0.1:8000/api/tasks/create/",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-07-25T20:28:15.502Z",
+            "modified": "2024-07-25T20:28:15.502Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token e21d12ea78557984931bf6b5921764f1589f96e8"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"six block\",\n  \"description\":\"this is my six block\",\n  \"due_date\":\"2024-07-27\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "bf83a0b6-514e-4ae7-8a19-2589df9fbc69",
+            "colId": "75983173-7ee9-48a4-b550-4204c5d4bad6",
+            "containerId": "",
+            "name": "update-task-by-id",
+            "url": "http://127.0.0.1:8000/api/tasks/2/",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-07-25T20:28:24.986Z",
+            "modified": "2024-07-25T20:28:24.986Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token e21d12ea78557984931bf6b5921764f1589f96e8"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"first second\",\n  \"description\":\"this is my second block\",\n  \"due_date\":\"2024-07-25\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "57f4d75a-be67-47e8-a73b-d2a3724c86e0",
+            "colId": "75983173-7ee9-48a4-b550-4204c5d4bad6",
+            "containerId": "",
+            "name": "delete-task-by-id",
+            "url": "http://127.0.0.1:8000/api/tasks/4/",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-07-25T20:28:33.421Z",
+            "modified": "2024-07-25T20:28:33.421Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token e21d12ea78557984931bf6b5921764f1589f96e8"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\":\"first second\",\n  \"description\":\"this is my second block\",\n  \"due_date\":\"2024-07-25\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "f81c5809-e297-4d82-a7c6-e8d5a3042541",
+            "colId": "75983173-7ee9-48a4-b550-4204c5d4bad6",
+            "containerId": "",
+            "name": "get-member-by-task-id",
+            "url": "http://127.0.0.1:8000/api/tasks/2/members/",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-07-25T20:28:48.058Z",
+            "modified": "2024-07-25T20:28:48.058Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token e21d12ea78557984931bf6b5921764f1589f96e8"
+                }
+            ]
+        },
+        {
+            "_id": "deb85bb9-1583-4fbb-8fbe-17f15d1a83f3",
+            "colId": "75983173-7ee9-48a4-b550-4204c5d4bad6",
+            "containerId": "",
+            "name": "asign-task-to-member",
+            "url": "http://127.0.0.1:8000/api/tasks/2/add_member/",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-07-25T20:28:59.345Z",
+            "modified": "2024-07-25T20:28:59.345Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token e21d12ea78557984931bf6b5921764f1589f96e8"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"user_id\":4\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "1789632f-31d4-40f5-96dc-fe338558e00b",
+            "colId": "75983173-7ee9-48a4-b550-4204c5d4bad6",
+            "containerId": "",
+            "name": "remove-member-from-task",
+            "url": "http://127.0.0.1:8000/api/tasks/2/remove_member/",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-07-25T20:29:08.546Z",
+            "modified": "2024-07-25T20:29:08.546Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token e21d12ea78557984931bf6b5921764f1589f96e8"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"user_id\":3\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "403cc6f9-7711-41f3-9b63-abbf97734d81",
+            "colId": "75983173-7ee9-48a4-b550-4204c5d4bad6",
+            "containerId": "",
+            "name": "add-comment-on-task",
+            "url": "http://127.0.0.1:8000/api/tasks/3/comments/",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-07-25T20:29:17.273Z",
+            "modified": "2024-07-25T20:29:17.273Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token e21d12ea78557984931bf6b5921764f1589f96e8"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\"content\": \"this is our last comment\"}",
+                "form": []
+            }
+        },
+        {
+            "_id": "9410c983-f3b9-472a-bc1b-cb092d2de998",
+            "colId": "75983173-7ee9-48a4-b550-4204c5d4bad6",
+            "containerId": "",
+            "name": "update-task-status",
+            "url": "http://127.0.0.1:8000/api/tasks/3/status/",
+            "method": "PATCH",
+            "sortNum": 110000,
+            "created": "2024-07-25T20:29:27.422Z",
+            "modified": "2024-07-25T20:29:27.422Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Token e21d12ea78557984931bf6b5921764f1589f96e8"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"status\":\"inprogress\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "6IgG_osRZPyfo31eZaDIC24ZdkQv7EQ4wLA1nzzGFKNg7Js6maL0j7_8lc__6wHVNZxhCrj8W_pgUktMHtvEOw"
+}
