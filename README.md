@@ -74,6 +74,10 @@ The Task Management API is a Django-based RESTful API for managing tasks, users,
 7. **Access Swagger Documentation**
 
     Open your browser and navigate to `http://127.0.0.1:8000/swagger/` to interact with the API.
+   
+7. **Access Redoc Documentation**
+
+    Open your browser and navigate to `http://127.0.0.1:8000/redoc/` to interact with the API.
 
 ## Endpoints
 
