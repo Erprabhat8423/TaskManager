@@ -108,6 +108,10 @@ The Task Management API is a Django-based RESTful API for managing tasks, users,
 
 Swagger documentation is available at `/swagger/`. It provides interactive documentation for the API endpoints.
 
+## Redoc Documentation
+
+Swagger documentation is available at `/redoc/`. It provides interactive documentation for the API endpoints.
+
 ## Deployment
 
 To deploy the application, you can use platforms like Netlify, PythonAnywhere, or similar. Follow their respective deployment guides to set up your Django project.
